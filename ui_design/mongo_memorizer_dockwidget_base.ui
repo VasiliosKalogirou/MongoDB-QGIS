@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>3</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
@@ -250,161 +250,106 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab">
+      <widget class="QWidget" name="tab_5">
        <attribute name="title">
         <string>Save</string>
        </attribute>
-       <widget class="QLabel" name="collection_Label">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>59</y>
-          <width>270</width>
-          <height>27</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>304</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Collection</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="save_features_checkbox">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>229</y>
-          <width>270</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>save selected features</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="database_Label">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>3</y>
-          <width>270</width>
-          <height>26</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>304</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Database</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="srid_LineEdit">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>203</y>
-          <width>270</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>4326</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="srid_Label">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>172</y>
-          <width>270</width>
-          <height>27</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>SRID</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="geometry_Label">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>116</y>
-          <width>270</width>
-          <height>26</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Geometry &quot;column&quot;</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="geometry_LineEdit">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>146</y>
-          <width>270</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>geometry</string>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="database_ComboBox">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>33</y>
-          <width>270</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>304</width>
-          <height>16777215</height>
-         </size>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="collection_ComboBox">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>90</y>
-          <width>270</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>304</width>
-          <height>16777215</height>
-         </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="save_PushButton">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>260</y>
-          <width>271</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Save Data in MongoDB</string>
-        </property>
-       </widget>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Database</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="database_ComboBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Collection</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="collection_ComboBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Geometry &quot;column&quot;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="geometry_LineEdit"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>SRID</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="srid_LineEdit">
+          <property name="text">
+           <string>4326</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="save_features_checkbox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>save selected features</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="save_PushButton">
+          <property name="text">
+           <string>Save Data in MongoDB</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
